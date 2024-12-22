@@ -129,12 +129,12 @@ header .navbar {
   display: none;
 }
 
-  /* Dropdown Styling */
-  .nav-item.dropdown {
+/* Dropdown Styling */
+.nav-item.dropdown {
     position: relative;
-  }
+}
   
-  .nav-item .dropdown-menu {
+.nav-item .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -144,23 +144,23 @@ header .navbar {
     border-radius: var(--border-radius-s);
     list-style: none;
     padding: 10px 0;
-  }
+}
   
-  .nav-item .dropdown-menu .dropdown-link {
+.nav-item .dropdown-menu .dropdown-link {
     display: block;
     padding: 10px 15px;
     color: var(--dark-color);
     text-decoration: none;
     transition: background 0.3s ease;
-  }
+}
   
-  .nav-item .dropdown-menu .dropdown-link:hover {
+.nav-item .dropdown-menu .dropdown-link:hover {
     background: var(--light-gray-color);
-  }
+}
   
-  .nav-item.dropdown:hover .dropdown-menu {
+.nav-item.dropdown:hover .dropdown-menu {
     display: block;
-  }
+}
 
 
 /* Hero section styling */
