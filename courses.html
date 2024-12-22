@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WIZ</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="courses.css">
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img src="./images/wizlogo.png" alt="" />
+        </a>
+
+        <ul class="nav-service">
+          <button id="service-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">Destinations</a>
+            <ul class="dropdown-menu">
+                <li><a href="uk.html" class="dropdown-link">UK</a></li>
+                <li><a href="australia.html" class="dropdown-link">Australia</a></li>
+                <li><a href="ireland.html" class="dropdown-link">Ireland</a></li>
+                <li><a href="korea.html" class="dropdown-link">Korea</a></li>
+                <li><a href="usa.html" class="dropdown-link">USA</a></li>
+                <li><a href="canada.html" class="dropdown-link">Canada</a></li>
+                <li><a href="newzealand.html" class="dropdown-link">New Zealand</a></li>
+                <li><a href="denmark.html" class="dropdown-link">Denmark</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#courses" class="nav-link">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <button id="service-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <main>
+    <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <h1 class="section-title">Explore Popular Courses</h1>
+            </div>
+        </section>
+
+    <!-- Popular Courses Section -->
+        <section class="courses-section">
+            <div class="section-content">
+                <h2 class="section-title">Popular Courses</h2>
+                <div class="courses-list">
+                    <div class="courses-item">
+                        <img src="./images/engineering.jpg" alt="Course 1" class="courses-image">
+                        <h3 class="name">Engineering</h3>
+                        <p class="text">Learn the latest web technologies and build stunning websites.</p>
+                    </div>
+                    <div class="courses-item">
+                        <img src="./images/bba.jpeg" alt="Course 2" class="courses-image">
+                        <h3 class="name">BBA</h3>
+                        <p class="text">Master data analysis, visualization, and machine learning.</p>
+                    </div>
+                    <div class="courses-item">
+                        <img src="./images/architect.jpg" alt="Course 3" class="courses-image">
+                        <h3 class="name">Architecture</h3>
+                        <p class="text">Create professional designs with industry-standard tools.</p>
+                    </div>
+                    <div class="courses-item">
+                        <img src="./images/computer-science.png" alt="Course 4" class="courses-image">
+                        <h3 class="name">Computer Science</h3>
+                        <p class="text">Enhance your skills in SEO, social media, and advertising.</p>
+                    </div>
+                    <div class="courses-item">
+                        <img src="./images/finance.jpg" alt="Course 5" class="courses-image">
+                        <h3 class="name">Finance</h3>
+                        <p class="text">Learn cybersecurity techniques to protect systems.</p>
+                    </div>
+                    <div class="courses-item">
+                        <img src="./images/law.jpg" alt="Course 6" class="courses-image">
+                        <h3 class="name">Law</h3>
+                        <p class="text">Dive into the world of cloud platforms and DevOps tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>Lagankhel, Ward- 05, Kathmandu, Bagmati, Nepal</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@wizabroadsolution.edu.np</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>015455907 // 9810100333</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: 10:00 AM - 4:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.wizabroadsolution.edu.np</p>
+            </li>
+          </ul>
+          <form action="#" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 WIZ Abroad Solutions</p>
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Terms & Conditions</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Linking Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
