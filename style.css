@@ -166,7 +166,10 @@ header .navbar {
 /* Hero section styling */
 .hero-section {
   height: 83vh;
-  background: var(--light-gray-color);
+  background: var(--light-gray-color) url(./images/indexbanner.jpg);
+  background-position: 50% 52.5rem;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .hero-section .section-content {
@@ -189,7 +192,6 @@ header .navbar {
 }
 
 .hero-section .hero-details .subtitle {
-  padding-left: 100px;
   margin-top: 24px;
   max-width: 100%;
   font-size: var(--font-size-xl);
@@ -199,14 +201,12 @@ header .navbar {
 
 .hero-section .hero-details .description {
   color: var(--dark-color);
-  padding-left: 200px;
-  max-width: 100%;
+  max-width: 50%;
   margin: 24px 0 40px;
   font-size: var(--font-size-m);
 }
 
 .hero-section .hero-details .buttons {
-  padding-left: 400px;
   display: flex;
   gap: 25px;
 }
@@ -228,7 +228,7 @@ header .navbar {
   display: block;
   border: 2px solid transparent;
   border-radius: var(--border-radius-m);
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--white-color);
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
