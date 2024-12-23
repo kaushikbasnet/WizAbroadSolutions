@@ -167,8 +167,8 @@ header .navbar {
 .hero-section {
   height: 83vh;
   background: var(--light-gray-color) url(./images/indexbanner.jpg);
-  background-position: 50% 52.5rem;
-  background-size: cover;
+  background-position: 50% 60rem;
+  background-size: cover no-repeat;
   min-height: 100vh;
 }
 
