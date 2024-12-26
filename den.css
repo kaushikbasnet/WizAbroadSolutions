@@ -57,7 +57,7 @@ header {
   }
   
   .navbar :where(#service-open-button, #service-close-button) {
-    display: none;
+    display: flex;
   }
   
   /* Dropdown Styling */
@@ -164,16 +164,19 @@ header {
     
   
 /* Hero Section */
-.destination-hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: transparent;
- 
+.den-hero {
+  position: relative;
+  width: 100%;
+  min-height: 110vh; /* Full viewport height with a buffer */
+  background: url('./images/denmark-hero.jpg') center/cover no-repeat;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.destination-hero::after {
+.den-hero::after {
     content: '';
     position: absolute;
     top: 0;
@@ -181,19 +184,20 @@ header {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0);
+    z-index: 1;
 }
 
-.destination-hero .hero-content {
+.den-hero .hero-content {
     position: relative;
     z-index: 1;
 }
 
-.destination-hero .hero-content h1 {
+.den-hero .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
-.destination-hero .hero-content p {
+.den-hero .hero-content p {
     font-size: 1.5rem;
 }
 
@@ -327,4 +331,48 @@ footer {
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+
+/* Responsive Styles for Different Screen Sizes */
+@media screen and (max-width: 1024px) {
+  .den-hero {
+    min-height: 90vh; /* Reduce height slightly */
+    background-position: center top; /* Focus image on the top */
+    background-size: cover; /* Ensure it still covers */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .den-hero {
+    min-height: 85vh;
+    background-position: top; /* Adjust position for medium screens */
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .den-hero {
+    min-height: 60vh;
+    width: auto;
+    background-position: center bottom 300%; /* Adjust position for smaller screens */
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .den-hero {
+    min-height: 65vh;
+    width: auto;
+    background-position: center bottom 5%;
+    background-size: contain; /* Keep full coverage */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .den-hero {
+    min-height: 45vh;
+    background-position: center bottom 5%; 
+    background-size: contain; 
+  }
 }
