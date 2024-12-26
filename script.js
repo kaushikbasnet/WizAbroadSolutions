@@ -15,6 +15,16 @@ navbarLinks.forEach((link) => {
   link.addEventListener("click", () => serviceOpenButton.click());
 });
 
+document.querySelectorAll('.nav-item.dropdown > .nav-link').forEach(link => {
+  link.addEventListener('click', e => {
+      e.preventDefault(); // Prevent default link behavior
+      const parent = link.parentElement;
+      parent.classList.toggle('active'); // Toggle dropdown visibility
+  });
+});
+
+
+
 /* Initializing Swiper */
 let swiper = new Swiper(".slider-wrapper", {
   loop: true,
@@ -47,3 +57,12 @@ let swiper = new Swiper(".slider-wrapper", {
     },
   },
 });
+
+window.fbAsyncInit = function() {
+  FB.init({
+    appId: 'YOUR_APP_ID', // Replace with your App ID
+    autoLogAppEvents: true,
+    xfbml: true,
+    version: 'v16.0'
+  });
+};

@@ -52,6 +52,19 @@
     </header>
 
     <main>
+        <!-- Vertical Sticky Social Buttons -->
+        <div class="vertical-social-buttons">
+          <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="social-button facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/+9779801853211" target="_blank" class="social-button whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://instagram.com/YOUR_PAGE" target="_blank" class="social-button instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
         <!-- Hero Section -->
         <section class="destination-hero" style="background: url('images/uk-hero.jpg')  center/cover no-repeat; min-height: 100vh;">
             <div class="hero-content">
@@ -93,47 +106,61 @@
         </section>
 
         <!-- Contact section -->
-      <section class="contact-section" id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="section-content">
-          <ul class="contact-info-list">
-            <li class="contact-info">
-              <i class="fa-solid fa-location-crosshairs"></i>
-              <p>Lagankhel, Ward- 05, Kathmandu, Bagmati, Nepal</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-envelope"></i>
-              <p>info@wizabroadsolution.edu.np</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-phone"></i>
-              <p>015455907 // 9810100333</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Saturday: Closed</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Sunday: 10:00 AM - 4:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-globe"></i>
-              <p>www.wizabroadsolution.edu.np</p>
-            </li>
-          </ul>
-          <form action="#" class="contact-form">
-            <input type="text" placeholder="Your name" class="form-input" required />
-            <input type="email" placeholder="Your email" class="form-input" required />
-            <textarea placeholder="Your message" class="form-input" required></textarea>
-            <button type="submit" class="button submit-button">Submit</button>
-          </form>
-        </div>
-      </section>
+        <section class="contact-section" id="contact">
+          <h2 class="section-title">Contact Us</h2>
+          <div class="section-content">
+            <ul class="contact-info-list">
+              <li class="contact-info">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>Lagankhel, Ward- 05, Kathmandu, Bagmati, Nepal</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-regular fa-envelope"></i>
+                <p>info@wizabroadsolution.edu.np</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <p>015455907 // 9810100333</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Sunday: 10:00 AM - 4:00 PM | Saturday: Closed</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>+977 9801853211</p>
+              </li>
+            </ul>
+            <form id="contactForm" class="contact-form">
+              <input
+                type="text"
+                id="name"
+                placeholder="Your name"
+                class="form-input"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Your email"
+                class="form-input"
+                required
+              />
+              <textarea
+                id="message"
+                placeholder="Your message"
+                class="form-input"
+                required
+              ></textarea>
+              <button type="submit" class="button submit-button">Submit</button>
+            </form>
+            <p id="form-status" style="display: none;"></p>
+          </div>
+        </section>
 
         <footer class="footer-section">
             <div class="section-content">
@@ -141,7 +168,9 @@
             <div class="social-link-list">
                 <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/+9779801853211" class="social-link" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
             </div>
             <p class="policy-text">
                 <a href="#" class="policy-link">Privacy policy</a>

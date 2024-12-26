@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="destinations.css" />
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
   </head>
   <body>
     <!-- Header / Navbar -->
@@ -56,10 +59,24 @@
         </ul>
 
         <button id="service-open-button" class="fas fa-bars"></button>
+        
       </nav>
     </header>
 
     <main>
+      <!-- Vertical Sticky Social Buttons -->
+      <div class="vertical-social-buttons">
+        <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="social-button facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/+9779801853211" target="_blank" class="social-button whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/YOUR_PAGE" target="_blank" class="social-button instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
       <!-- Hero section -->
       <section class="hero-section">
         <div class="section-content">
@@ -94,15 +111,61 @@
             <div class="social-link-list">
               <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
               <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/+9779801853211" class="social-link" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Our Team section -->
+      <section class="team-section" id="team">
+        <h2 class="section-title">Our Team</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="team-list swiper-wrapper">
+                <li class="team-member swiper-slide">
+                  <img src="./images/happyclient.jpg" alt="Team Member" class="team-image" />
+                  <h3 class="name">Saguna Basnet</h3>
+                  <p class="designation">CEO & Founder</p>
+                  <p class="description">Saguna leads our team with over 15 years of experience in the education consultancy industry.</p>
+                </li>
+                <li class="team-member swiper-slide">
+                  <img src="./images/happyclient.jpg" alt="Team Member" class="team-image" />
+                  <h3 class="name">Suzu Karki</h3>
+                  <p class="designation">Head of Operations</p>
+                  <p class="description">Bob ensures that our processes run smoothly to provide the best service to our clients.</p>
+                </li>
+                <li class="team-member swiper-slide">
+                  <img src="./images/happyclient.jpg" alt="Team Member" class="team-image" />
+                  <h3 class="name">Binisha Thapa</h3>
+                  <p class="designation">Senior Counselor</p>
+                  <p class="description">Catherine specializes in helping students find the perfect program and university.</p>
+                </li>
+                <li class="team-member swiper-slide">
+                  <img src="./images/happyclient.jpg" alt="Team Member" class="team-image" />
+                  <h3 class="name">Jasmina</h3>
+                  <p class="designation">Visa Expert</p>
+                  <p class="description">David assists students with all their visa and immigration needs.</p>
+                </li>
+              </ul>
+      
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
       <!-- service section -->
       <section class="service-section" id="service">
-        <h2 class="section-title">Our service</h2>
+        <h2 class="section-title">Our services</h2>
         <div class="section-content">
           <ul class="service-list">
             <li class="service-item">
@@ -250,15 +313,11 @@
             </li>
             <li class="contact-info">
               <i class="fa-regular fa-clock"></i>
-              <p>Saturday: Closed</p>
+              <p>Sunday: 10:00 AM - 4:00 PM | Saturday: Closed</p>
             </li>
             <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Sunday: 10:00 AM - 4:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-globe"></i>
-              <p>www.wizabroadsolution.edu.np</p>
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>+977 9801853211</p>
             </li>
           </ul>
           <form id="contactForm" class="contact-form">
@@ -334,7 +393,10 @@
           <div class="social-link-list">
             <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/+9779801853211" class="social-link" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            
           </div>
           <p class="policy-text">
             <a href="#" class="policy-link">Privacy policy</a>
@@ -343,6 +405,7 @@
           </p>
         </div>
       </footer>
+
     </main>
 
     <!-- Linking Swiper JS -->

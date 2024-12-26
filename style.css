@@ -104,12 +104,15 @@ header .navbar {
 }
 
 .navbar .nav-logo img {
-  height: 100px;
+  height: 85px;
 }
 
 .navbar .nav-service {
+  list-style: none;
   gap: 10px;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar .nav-service .nav-link {
@@ -126,7 +129,7 @@ header .navbar {
 }
 
 .navbar :where(#service-open-button, #service-close-button) {
-  display: none;
+  display: flex;
 }
 
 /* Dropdown Styling */
@@ -160,6 +163,82 @@ header .navbar {
   
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/* Menu icon and close button */
+#service-open-button,
+#service-close-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* Container for vertical social buttons */
+.vertical-social-buttons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* General styling for each social button */
+.social-button {
+  background-color: #333; /* Default background color */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+/* Facebook button styles */
+.social-button.facebook {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.social-button.facebook:hover {
+  background-color: #2d4373; /* Darker blue on hover */
+  transform: scale(1.1);
+}
+
+/* WhatsApp button styles */
+.social-button.whatsapp {
+  background-color: #25d366; /* WhatsApp green */
+}
+
+.social-button.whatsapp:hover {
+  background-color: #128c7e; /* Darker green on hover */
+  transform: scale(1.1);
+}
+
+/* Instagram button styles */
+.social-button.instagram {
+  background-color: #e4405f; /* Instagram pink */
+}
+
+.social-button.instagram:hover {
+  background-color: #b3364e; /* Darker pink on hover */
+  transform: scale(1.1);
+}
+
+/* Icon size and styling */
+.social-button i {
+  font-size: 24px;
+}
+
+/* Optional: Add a shadow for better visibility */
+.social-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -257,8 +336,8 @@ header .navbar {
 
 /* About section styling */
 .about-section {
-  padding: 120px 0;
-  background: var(--light-gray-color);
+  padding: 160px 0;
+  background: var(--white-color);
 }
 
 .about-section .section-content {
@@ -306,12 +385,76 @@ header .navbar {
   color: var(--secondary-color);
 }
 
+/* Team Section Styling */
+.team-section {
+  padding: 0 0 100px;
+  background: var(--white-color);
+}
+
+.team-section .slider-wrapper {
+  overflow: hidden;
+  margin: 0 60px 50px;
+}
+
+.team-section .team-member {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team-section .team-member .team-image {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 50px;
+  object-fit: cover;
+  border-radius: var(--border-radius-circle);
+}
+
+.team-section .team-member .name {
+  margin-bottom: 16px;
+  font-size: var(--font-size-m);
+}
+
+.team-section .team-member .designation {
+  margin-bottom: 10px;
+  font-size: var(--font-size-s);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+}
+
+.team-section .team-member .description {
+  line-height: 25px;
+  font-size: var(--font-size-s);
+  color: var(--dark-color);
+}
+
+.team-section .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: var(--secondary-color);
+}
+
+.team-section .swiper-slide-button {
+  color: var(--secondary-color);
+  margin-top: -50px;
+  transition: 0.3s ease;
+}
+
+.team-section .swiper-slide-button:hover {
+  color: var(--primary-color);
+}
+
+
 /* service section styling */
 
 .service-section {
   color: var(--dark-color);
-  background: var(--white-color);
-  padding: 50px 0 100px;
+  background: var(--light-gray-color);
+  padding: 100px 0 100px;
 }
 
 .service-section .service-list {
@@ -352,7 +495,7 @@ header .navbar {
 
 /* Testimonials section styling */
 .testimonials-section {
-  padding: 50px 0 100px;
+  padding: 100px 0 100px;
   background: var(--white-color);
 }
 
@@ -409,8 +552,8 @@ header .navbar {
 
 /* courses section styling */
 .courses-section {
-  padding: 50px 0 100px;
-  background: var(--light-gray-color);
+  padding: 100px 0 100px;
+  background: var(--white-color);
 }
 
 .courses-section .courses-list {
@@ -474,7 +617,7 @@ header .navbar {
 
 /* Contact section styling */
 .contact-section {
-  padding: 50px 0 100px;
+  padding: 100px 0 100px;
   background: var(--light-gray-color);
 }
 
@@ -567,13 +710,15 @@ header .navbar {
 
 .footer-section .social-link-list .social-link:hover,
 .footer-section .policy-text .policy-link:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .footer-section .policy-text .separator {
   color: #fff;
   margin: 0 5px;
 }
+
+
 
 /* Responsive media query code for max width 1024px */
 @media screen and (max-width: 1024px) {
@@ -623,7 +768,7 @@ header .navbar {
   }
 
   .navbar #service-open-button {
-    color: #fff;
+    color: #000;
   }
 
   .navbar .nav-service #service-close-button {
@@ -658,6 +803,38 @@ header .navbar {
     color: var(--dark-color);
     font-size: var(--font-size-l);
   }
+
+/* Dropdown in Mobile */
+@media (max-width: 768px) {
+  .nav-item .dropdown-menu {
+      position: static; /* Ensure it stays inside the mobile menu */
+      box-shadow: none; /* Remove shadow for simplicity */
+      transform: none;
+      transition: none; /* Disable hover animations for mobile */
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .nav-item.dropdown.active .dropdown-menu {
+      display: flex;
+  }
+
+  .dropdown-link {
+      padding: 10px;
+      color: var(--dark-color);
+      text-align: left;
+  }
+
+  .dropdown-link:hover {
+      background: var(--secondary-color);
+      color: var(--white-color);
+  }
+}
+
 
   .hero-section .section-content {
     text-align: center;
@@ -743,5 +920,49 @@ header .navbar {
   .footer-section .section-content {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+/* Responsive media query code for max width 768px */
+@media screen and (max-width: 768px) {
+  .nav-service {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 9999;
+  }
+
+  .nav-service.open {
+    right: 0;
+  }
+
+  .nav-service .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #service-open-button {
+    display: block;
+  }
+
+  #service-close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+  }
+
+  body.show-mobile-service {
+    overflow: hidden;
   }
 }
