@@ -478,6 +478,8 @@ header .navbar {
   width: 100%;
   margin-bottom: 15px;
   object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-section .service-list .service-item .name {
@@ -492,6 +494,9 @@ header .navbar {
   color: var(--dark-color);
 }
 
+.service-section .service-list .service-item .service-image:hover{
+  transform: translateY(-15px);
+}
 
 /* Testimonials section styling */
 .testimonials-section {

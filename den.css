@@ -35,7 +35,7 @@ header {
   }
   
   .navbar .nav-logo img {
-    height: 100px;
+    height: 85px;
   }
   
   .navbar .nav-service {
@@ -337,16 +337,16 @@ footer p {
 /* Responsive Styles for Different Screen Sizes */
 @media screen and (max-width: 1024px) {
   .den-hero {
-    min-height: 90vh; /* Reduce height slightly */
-    background-position: center top; /* Focus image on the top */
-    background-size: cover; /* Ensure it still covers */
+    min-height: 90vh;
+    background-position: center top;
+    background-size: cover;
   }
 }
 
 @media screen and (max-width: 900px) {
   .den-hero {
     min-height: 85vh;
-    background-position: top; /* Adjust position for medium screens */
+    background-position: top;
     background-size: cover;
   }
 }
@@ -355,17 +355,17 @@ footer p {
   .den-hero {
     min-height: 60vh;
     width: auto;
-    background-position: center bottom 300%; /* Adjust position for smaller screens */
+    background-position: center bottom 300%;
     background-size: cover;
   }
 }
 
 @media screen and (max-width: 640px) {
   .den-hero {
-    min-height: 65vh;
+    min-height: 40vh;
     width: auto;
     background-position: center bottom 5%;
-    background-size: contain; /* Keep full coverage */
+    background-size: contain;
   }
 }
 
