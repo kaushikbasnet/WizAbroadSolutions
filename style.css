@@ -726,6 +726,17 @@ header .navbar {
 
 
 /* Responsive media query code for max width 1024px */
+@media screen and (max-width: 500px) {
+  .hero-section {
+    min-height: 50vh;
+    background-position: center top 28%; 
+    background-size: contain; 
+  }
+
+  .hero-details{
+    margin-top: 120px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .service-section .service-list {
     gap: 60px;
