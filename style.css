@@ -904,7 +904,14 @@ header .navbar {
 
 /* Responsive media query code for max width 640px */
 @media screen and (max-width: 640px) {
+  .hero-section{
+    min-height: 5vh;
+    background-size: contain;
+  }
 
+  .hero-details{
+    padding-top: 5rem;
+  }
   .service-section .service-list .service-item,
   .courses-section .courses-list .courses-item {
     width: 100%;
