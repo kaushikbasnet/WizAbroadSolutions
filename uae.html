@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study in the USA</title>
+    <title>Study in the UAE</title>  
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="usa.css" />
+    <link rel="stylesheet" href="uae.css" />
 
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-      <!-- browser compatibility -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -74,42 +73,42 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="usa-hero">
+        <section class="uae-hero">
             <div class="hero-content">
             </div>
         </section>
 
         <!-- Image Gallery -->
         <section class="destination-images">
-            <h2 class="section-title">Highlights of the USA</h2>
+            <h2 class="section-title">Highlights of the UAE</h2>
             <div class="image-gallery">
-                <img src="images/usa1.jpg" alt="UK Landscape">
-                <img src="images/usa2.jpg" alt="University Campus">
-                <img src="images/usa3.jpg" alt="UK Cityscape">
-                <img src="images/usa4.jpg" alt="UK Landscape">
-                <img src="images/usa5.jpg" alt="University Campus">
-                <img src="images/usa6.jpg" alt="UK Cityscape">
+                <img src="images/uae1.jpg" alt="UAE Landscape">
+                <img src="images/uae2.webp" alt="University Campus">
+                <img src="images/uae3.png" alt="UAE Cityscape">
+                <img src="images/uae4.jpg" alt="UAE Architecture">
+                <img src="images/uae5.webp" alt="University Campus">
+                <img src="images/uae6.webp" alt="UAE Cityscape">
             </div>
         </section>
 
         <!-- Information Section -->
         <section class="destination-info">
-            <h2 class="section-title">Why Study in the USA?</h2>
-            <p>The United States offers unparalleled opportunities for higher education, with a wide range of institutions known for academic excellence and innovation. Home to Ivy League schools and globally recognized research universities, the USA excels in diverse fields, including technology, business, and the arts. Its dynamic campus life, coupled with access to cutting-edge facilities and industry leaders, provides students with the tools to succeed. Studying in the USA also opens doors to a vast network of career opportunities and cultural experiences.</p>
+            <h2 class="section-title">Why Study in the UAE?</h2>
+            <p>The UAE is a global hub for education and innovation, offering students the opportunity to study in a multicultural environment with cutting-edge facilities. With a focus on quality education, the UAE is home to internationally recognized universities and provides diverse academic programs. The country’s strategic location, safety, and state-of-the-art infrastructure make it a preferred choice for international students.</p>
             
             <h2 class="section-title">Key Facts</h2>
             <div class="info-cards">
                 <div class="info-card">
-                    <h3>Diverse Range of Programs</h3>
-                    <p>he USA offers programs in nearly every field of study, from liberal arts to cutting-edge technology and research.</p>
+                    <h3>Global Education Hub</h3>
+                    <p>The UAE attracts top universities and institutions, ensuring high-quality education and global recognition.</p>
                 </div>
                 <div class="info-card">
-                    <h3>World-Class Institutions</h3>
-                    <p>With Ivy League schools and renowned universities, the USA provides unmatched academic opportunities.</p>
+                    <h3>Multicultural Environment</h3>
+                    <p>With students from around the world, the UAE provides a diverse and inclusive learning atmosphere.</p>
                 </div>
                 <div class="info-card">
-                    <h3>Dynamic Campus Life</h3>
-                    <p>Students enjoy a vibrant campus culture with access to clubs, events, and networking opportunities.</p>
+                    <h3>Safety and Innovation</h3>
+                    <p>The UAE is known for its safety, cutting-edge technology, and investment in innovative education practices.</p>
                 </div>
         </section>
 
@@ -196,29 +195,26 @@
       const serviceCloseButton = document.querySelector("#service-close-button");
 
       serviceOpenButton.addEventListener("click", () => {
-        // Toggle mobile service visibility
         document.body.classList.toggle("show-mobile-service");
       });
 
-      // Close service when the close button is clicked
       serviceCloseButton.addEventListener("click", () => serviceOpenButton.click());
 
-      // Close service when nav link is clicked
       navbarLinks.forEach((link) => {
         link.addEventListener("click", () => serviceOpenButton.click());
       });
 
       document.querySelectorAll('.nav-item.dropdown > .nav-link').forEach(link => {
         link.addEventListener('click', e => {
-            e.preventDefault(); // Prevent default link behavior
+            e.preventDefault(); 
             const parent = link.parentElement;
-            parent.classList.toggle('active'); // Toggle dropdown visibility
+            parent.classList.toggle('active');
         });
       });
 
       window.fbAsyncInit = function() {
         FB.init({
-          appId: 'YOUR_APP_ID', // Replace with your App ID
+          appId: 'YOUR_APP_ID',
           autoLogAppEvents: true,
           xfbml: true,
           version: 'v16.0'
