@@ -317,9 +317,9 @@ header .navbar {
 
 .hero-section .hero-details .button:hover,
 .hero-section .hero-details .button.contact-us {
-  color: var(--white-color);
-  border-color: var(--white-color);
-  background: var(--primary-color);
+  color: var(--dark-color);
+  border-color: var(--dark-color);
+  background: var(--white-color);
 }
 
 .hero-section .hero-details .button.contact-us:hover {
